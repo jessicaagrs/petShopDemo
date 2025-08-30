@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --background: linear-gradient(180deg, #f4f9f7 0%, #dbece5 40%, #b7d8cb 100%);
+  --wattle-500: #cab628;
+  --olivine-50: #f4f7ee;
+  --olivine-600: #5f763a;
+  --olivine-800: #3d4a2a;
+  --plantation-200: #b7d8cb;
+  --plantation-300: #8bbdac;
+  --plantation-400: #639e8b;
+  --plantation-950: #12211e;
+  --killarney-800:#254032;
+  --killarney-950: #111d17;
+  --wattle-50: #fbfbeb;
+  --wattle-900: #634820;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}

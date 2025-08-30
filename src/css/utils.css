@@ -1,0 +1,63 @@
+.title {
+  font-family: var(--font-secondary);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.text {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text-medium {
+  font-family: var(--font-secondary);
+  font-size: 25.227px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.38px;
+}
+
+.text-medium-normal {
+  font-family: var(--font-primary);
+  font-size: 15.767px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.92px;
+}
+
+.text-small {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.item-list {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.item-list::before {
+  content: url('/src//assets//img//bone.svg');
+  margin-right: 0.5rem;
+}
+
+.button {
+  background-color: var(--olivine-800);
+  color: var(--olivine-50);
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--olivine-600);
+}
