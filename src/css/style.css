@@ -389,10 +389,6 @@ body {
   }
   .welcome-text {
     z-index: 0;
-
-    p {
-      max-width: 100%;
-    }
   }
 
   .welcome-image > img {
