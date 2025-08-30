@@ -11,6 +11,7 @@
       href="/src/css/style.css"
     />
     <title>Pet Shop LP Sales [Demo]</title>
+    <meta name="description" content="Landing page de vendas para pet shop" />
   </head>
   <body>
     <progress class="progress"></progress>
@@ -26,7 +27,7 @@
             contato. <br /><br />Oferecemos serviços para o bem estar do seu
             pet:
           </p>
-          <ul>
+          <ul id="list-services">
             <li class="item-list text">
               Diversos tipos de brinquedos, roupas e acessórios;
             </li>
@@ -41,6 +42,7 @@
             </li>
           </ul>
           <a
+            id="meuElemento"
             href="#plans"
             class="button text-small"
             >conhecer mais serviços</a
@@ -54,7 +56,7 @@
         </div>
       </section>
       <section class="video">
-        <div>
+        <div class="video-container">
           <video
             controls
             src="https://videos.pexels.com/video-files/3191251/3191251-uhd_2732_1440_25fps.mp4"
@@ -105,6 +107,7 @@
           <div>
             <div>
               <img
+                data-professional="professional"
                 src="/src/assets/img/item1.png"
                 alt="Veterinário 1"
               />
@@ -121,6 +124,7 @@
               <img
                 src="/src/assets/img/item2.png"
                 alt="Veterinário 2"
+                data-professional="professional"
               />
             </div>
             <h3 class="text-medium">Cody Fisher</h3>
@@ -135,6 +139,7 @@
               <img
                 src="/src/assets/img/item3.png"
                 alt="Veterinário 3"
+                data-professional="professional"
               />
             </div>
             <h3 class="text-medium">Marvin McKinney</h3>
@@ -217,7 +222,10 @@
           </div>
         </div>
       </section>
-      <section class="plans" id="plans">
+      <section
+        class="plans"
+        id="plans"
+      >
         <h2 class="title">Conheça nossos planos mensais</h2>
         <div class="plans-items">
           <div class="plan-item">
@@ -230,6 +238,7 @@
               <li class="item-list text">Benefício 1</li>
               <li class="item-list text">Benefício 2</li>
             </ul>
+            <h4 class="text-big">R$ 99,90</h4>
             <a
               href="#"
               class="button text-small"
@@ -237,7 +246,7 @@
             >
           </div>
           <div class="plan-item">
-            <h3 class="text-medium">Pet Shop Basic</h3>
+            <h3 class="text-medium">Pet Shop Plus</h3>
             <img
               src="/src/assets/img/rectangle-2.png"
               alt="dog 2"
@@ -247,6 +256,7 @@
               <li class="item-list text">Benefício 2</li>
               <li class="item-list text">Benefício 3</li>
             </ul>
+            <h4 class="text-big">R$ 119,90</h4>
             <a
               href="#"
               class="button text-small"
@@ -254,17 +264,17 @@
             >
           </div>
           <div class="plan-item">
-            <h3 class="text-medium">Pet Shop Basic</h3>
+            <h3 class="text-medium">Pet Shop Premium</h3>
             <img
               src="/src/assets/img/rectangle-3.png"
               alt="dog 3"
             />
             <ul>
               <li class="item-list text">Benefício 1</li>
-              <li class="item-list text">Benefício 2</li>
-              <li class="item-list text">Benefício 3</li>
-              <li class="item-list text">Benefício 4</li>
+              <li class="item-list text">Benefício 2 + plus</li>
+              <li class="item-list text">Benefício 3 + plus</li>
             </ul>
+            <h4 class="text-big">R$ 199,90</h4>
             <a
               href="#"
               class="button text-small"

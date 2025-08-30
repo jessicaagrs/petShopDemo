@@ -14,6 +14,7 @@ body {
   background: var(--background);
   font-family: var(--font-primary);
   color: var(--plantation-950);
+  scroll-margin-top: 5rem;
   scroll-behavior: smooth;
 }
 
@@ -37,10 +38,6 @@ body {
   border-top-right-radius: 8px;
 }
 
-main {
-  margin-inline: 120px;
-}
-
 .welcome {
   margin-top: 50px;
   display: flex;
@@ -51,6 +48,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+  z-index: 1;
 
   p {
     max-width: 80ch;
@@ -67,12 +65,32 @@ main {
   width: 100%;
   height: 600px;
   object-fit: cover;
+  opacity: 0.1;
+  cursor: pointer;
 }
 
 .video {
   margin-top: 12rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 4rem;
+}
+
+.video-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  video {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .video-text {
@@ -88,6 +106,12 @@ main {
     margin-top: 30px;
     width: 250px;
   }
+}
+
+.welcome,
+.video,
+.testimonials {
+  margin-inline: 20px;
 }
 
 .team {
@@ -112,8 +136,8 @@ main {
 }
 
 .team-ceo {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 420px;
   object-fit: cover;
   position: absolute;
 }
@@ -126,13 +150,15 @@ main {
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: absolute;
-  left: 120px;
-  top: 50px;
+  right: -120px;
+  bottom: 20px;
 }
 
 .team-members {
   margin-top: 20rem;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   background-color: var(--plantation-200);
   border-radius: 12px;
@@ -142,11 +168,13 @@ main {
   div {
     padding: 1.5rem;
     text-align: center;
+    max-width: 445px;
 
     img {
       border-radius: 50%;
       height: 200px;
       width: 200px;
+      max-width: 100%;
       object-fit: cover;
     }
 
@@ -167,8 +195,8 @@ main {
 .testimonials-items {
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -183,12 +211,13 @@ main {
   border-radius: 20px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   height: 120px;
-  width: 500px;
+  max-width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--wattle-50);
+  padding-left: 1rem;
 
   &::before {
     border: 6px solid var(--wattle-900);
@@ -224,6 +253,7 @@ main {
 
   h2 {
     text-align: center;
+    margin-inline: 5px;
   }
 }
 
@@ -234,6 +264,7 @@ main {
   justify-items: center;
   align-items: end;
   gap: 2rem;
+  overflow: auto;
 }
 
 .plan-item {
@@ -249,7 +280,8 @@ main {
     text-align: center;
   }
 
-  h3, li {
+  h3,
+  li {
     color: var(--plantation-950);
   }
 
@@ -261,6 +293,15 @@ main {
     background-color: var(--plantation-300);
     height: 700px;
   }
+
+  img {
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.15);
+  }
 }
 
 .footer {
@@ -268,7 +309,18 @@ main {
   background-color: var(--killarney-800);
   color: var(--wattle-50);
   display: flex;
+  flex-wrap: wrap-reverse;
   gap: 30px;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  a > img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .footer-contact {
@@ -276,6 +328,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  padding: 1rem 0 0 1rem;
 }
 
 .footer-social {
@@ -285,11 +338,80 @@ main {
   gap: 40px;
 }
 
+/* animations */
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-in-out both;
+}
+
+.slide-in-blurred-right {
+  animation: slideInBlurredRight 1s linear both;
+}
+
+.slide-in-blurred-left {
+  animation: slideInBlurredLeft 1s linear 0.6s both;
+}
+
+.puff-in-ver {
+  animation: puffInVer 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.bounce-top {
+  animation: bounceTop 0.9s both;
+}
+
 /* mobile */
+
+@media (width >= 48rem) {
+  .team-tag {
+    left: 120px;
+    top: 50px;
+    height: max-content;
+  }
+}
+
+@media (width >= 64rem) {
+  .item-balloon {
+    width: 500px;
+  }
+
+  .footer {
+    a > img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
+@media (width >= 90rem) {
+  main {
+    margin-inline: 120px;
+  }
+  .welcome-text {
+    z-index: 0;
+
+    p {
+      max-width: 100%;
+    }
+  }
+
+  .welcome-image > img {
+    opacity: 1;
+    transition: transform 0.5s;
+  }
+
+  .welcome-image > img:hover {
+    transform: scale(1.15);
+  }
+}
 
 @media (width > 96rem) {
   main {
     max-width: 1536px;
     margin: 0 auto;
+  }
+
+  .testimonials-items {
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
   }
 }
