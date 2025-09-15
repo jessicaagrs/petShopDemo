@@ -286,12 +286,12 @@ body {
   }
 
   &:nth-child(odd) {
-    height: 630px;
+    height: 850px;
   }
 
   &:nth-child(even) {
     background-color: var(--plantation-300);
-    height: 700px;
+    height: 950px;
   }
 
   img {
