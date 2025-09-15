@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/css/style.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/img/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Pet Shop LP Sales [Demo]</title>
+    <meta
+      name="description"
+      content="Landing page de vendas para pet shop"
+    />
+  </head>
+  <body>
+    <progress class="progress"></progress>
+
+    <main>
+      <section class="welcome">
+        <div class="welcome-text">
+          <h1 class="title">Bem vindo ao Pet Shop Dev!</h1>
+          <p class="text">
+            Somos apaixonados por pets! Essa não é apenas uma expressão inserida
+            em nossa missão como empresa, mas uma realidade vivenciada todos os
+            dias em nossas atitudes, nas lojas e em todos os nossos pontos de
+            contato. <br /><br />Oferecemos serviços para o bem estar do seu
+            pet:
+          </p>
+          <ul id="list-services">
+            <li class="item-list text">
+              Diversos tipos de brinquedos, roupas e acessórios;
+            </li>
+            <li class="item-list text">
+              Rações personalizadas por raça e saúde;
+            </li>
+            <li class="item-list text">
+              Avisos por whatsapp , como vencimento de vacinas;
+            </li>
+            <li class="item-list text">
+              Banho e tosa com opção delivery na sua casa;
+            </li>
+          </ul>
+          <a
+            data-animate="slideInBl"
+            id="btnMoreServices"
+            href="#plans"
+            class="button text-small"
+            >conhecer mais serviços</a
+          >
+        </div>
+        <div class="welcome-image">
+          <img
+            src="/src/assets/img/dogs.webp"
+            alt="Vários cães"
+            width="487"
+            height="600"
+          />
+        </div>
+      </section>
+      <section class="video">
+        <div class="video-container">
+          <video
+            controls
+            src="https://videos.pexels.com/video-files/3191251/3191251-uhd_2732_1440_25fps.mp4"
+            width="620"
+            preload="metadata"
+            autoplay
+            muted
+            crossorigin="anonymous"
+          >
+            <track
+              kind="captions"
+              src="https://videos.pexels.com/video-files/3191251/3191251-uhd_2732_1440_25fps.vtt"
+              srclang="pt"
+              label="Português"
+            />
+            Desculpe, seu navegador não suporta vídeos incorporados, mas não se
+            preocupe, você pode
+            <a
+              href="https://videos.pexels.com/video-files/3191251/3191251-uhd_2732_1440_25fps.mp4"
+              >baixá-lo</a
+            >
+            e assisti-lo com seu player de vídeo favorito!
+          </video>
+        </div>
+        <div
+          class="video-text"
+          data-animate="slideInRight"
+        >
+          <h2 class="title">Proporcione uma rotina de lazer para seu Pet</h2>
+          <p class="text">
+            Cada vez mais popular, o serviço de dog walker (ou passeador de
+            cães), é uma forma de proporcionar aos pets momentos de lazer, na
+            companhia de profissionais especializados, e junto a outros animais
+            diariamente. Assim tutores ficam mais tranquilos e seus pets mais
+            felizes.
+          </p>
+          <a
+            href="#"
+            class="button text-small"
+            >obter dog walker</a
+          >
+        </div>
+      </section>
+      <section class="team">
+        <h2 class="title">Nosso time</h2>
+        <div class="team-ceo-container">
+          <img
+            src="/src/assets/img/image-ceo.webp"
+            alt="ceo pet dev"
+            class="team-ceo"
+            width="300"
+            height="420"
+            loading="lazy"
+          />
+          <div
+            class="team-tag"
+            data-animate="slideInRight"
+          >
+            Brooklyn Simmons, CEO
+          </div>
+        </div>
+        <div class="team-members">
+          <div data-animate="slideInBottom">
+            <div>
+              <img
+                data-professional="professional"
+                src="/src/assets/img/item1.webp"
+                alt="Veterinário 1"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="text-medium">Devon Lane</h3>
+            <p class="text-medium-normal">
+              Hey User I, I'd be happy to help you with meal preparation. I
+              enjoy cooking and can provide you with healthy and delicious
+              meals. Let's chat!
+            </p>
+          </div>
+          <div data-animate="slideInBottom">
+            <div>
+              <img
+                src="/src/assets/img/item2.webp"
+                alt="Veterinário 2"
+                data-professional="professional"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="text-medium">Cody Fisher</h3>
+            <p class="text-medium-normal">
+              Hello User K, I came across your request for someone to read books
+              with. I love reading too! Let's connect and find a good book to
+              dive into.
+            </p>
+          </div>
+          <div data-animate="slideInBottom">
+            <div>
+              <img
+                src="/src/assets/img/item3.webp"
+                alt="Veterinário 3"
+                data-professional="professional"
+                width="200"
+                height="200"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="text-medium">Marvin McKinney</h3>
+            <p class="text-medium-normal">
+              Hi User E, I read your request for help with technology. I'm
+              proficient in smartphones and computers and would love to assist
+              you. Let's schedule a session!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h2 class="title">
+          O que dizem os clientes que já usaram nossos serviços
+        </h2>
+        <div class="testimonials-items">
+          <div
+            class="item"
+            data-animate="fadeInLeft"
+          >
+            <div class="item-balloon">
+              <p class="text-medium-normal">
+                Hello Volunteer X, thank you for helping me with grocery
+                shopping last week. Your assistance made a big difference. Can
+                we plan another shopping trip?
+              </p>
+            </div>
+            <div class="item-client">
+              <img
+                src="/src/assets/img/client1.webp"
+                alt="cliente 1"
+                width="70"
+                height="70"
+                loading="lazy"
+              />
+              <p>Arlene McCoy</p>
+            </div>
+          </div>
+          <div
+            class="item"
+            data-animate="fadeInRight"
+          >
+            <div class="item-balloon">
+              <p class="text-medium-normal">
+                Hello Volunteer X, thank you for helping me with grocery
+                shopping last week. Your assistance made a big difference. Can
+                we plan another shopping trip?
+              </p>
+            </div>
+            <div class="item-client">
+              <img
+                src="/src/assets/img/client2.webp"
+                alt="cliente 2"
+                width="70"
+                height="70"
+                loading="lazy"
+              />
+              <p>Wade Warren</p>
+            </div>
+          </div>
+          <div
+            class="item"
+            data-animate="fadeInLeft"
+          >
+            <div class="item-balloon">
+              <p class="text-medium-normal">
+                Hello Volunteer X, thank you for helping me with grocery
+                shopping last week. Your assistance made a big difference. Can
+                we plan another shopping trip?
+              </p>
+            </div>
+            <div class="item-client">
+              <img
+                src="/src/assets/img/client3.webp"
+                alt="cliente 3"
+                width="70"
+                height="70"
+                loading="lazy"
+              />
+              <p>Marvin McKinney</p>
+            </div>
+          </div>
+          <div
+            class="item"
+            data-animate="fadeInRight"
+          >
+            <div class="item-balloon">
+              <p class="text-medium-normal">
+                Hello Volunteer X, thank you for helping me with grocery
+                shopping last week. Your assistance made a big difference. Can
+                we plan another shopping trip?
+              </p>
+            </div>
+            <div class="item-client">
+              <img
+                src="/src/assets/img/client4.webp"
+                alt="cliente 4"
+                width="70"
+                height="70"
+                loading="lazy"
+              />
+              <p>Jerome Bell</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="plans"
+        id="plans"
+      >
+        <h2 class="title">Conheça nossos planos mensais</h2>
+        <div class="plans-items">
+          <div
+            class="plan-item"
+            data-animate="slitInVertical"
+          >
+            <h3 class="text-medium">Pet Shop Basic</h3>
+            <img
+              src="/src/assets/img/rectangle-1.webp"
+              alt="dog 1"
+              width="310"
+              height="184"
+              loading="lazy"
+            />
+            <ul>
+              <li class="item-list text">Benefício 1</li>
+              <li class="item-list text">Benefício 2</li>
+            </ul>
+            <h4 class="text-big">R$ 99,90</h4>
+            <a
+              href="#"
+              class="button text-small"
+              >obter plano</a
+            >
+          </div>
+          <div
+            class="plan-item"
+            data-animate="slitInVertical"
+          >
+            <h3 class="text-medium">Pet Shop Plus</h3>
+            <img
+              src="/src/assets/img/rectangle-2.webp"
+              alt="dog 2"
+              width="310"
+              height="184"
+              loading="lazy"
+            />
+            <ul>
+              <li class="item-list text">Benefício 1</li>
+              <li class="item-list text">Benefício 2</li>
+              <li class="item-list text">Benefício 3</li>
+            </ul>
+            <h4 class="text-big">R$ 119,90</h4>
+            <a
+              href="#"
+              class="button text-small"
+              >obter plano</a
+            >
+          </div>
+          <div
+            class="plan-item"
+            data-animate="slitInVertical"
+          >
+            <h3 class="text-medium">Pet Shop Premium</h3>
+            <img
+              src="/src/assets/img/rectangle-3.webp"
+              alt="dog 3"
+              width="310"
+              height="184"
+              loading="lazy"
+            />
+            <ul>
+              <li class="item-list text">Benefício 1</li>
+              <li class="item-list text">Benefício 2 + plus</li>
+              <li class="item-list text">Benefício 3 + plus</li>
+            </ul>
+            <h4 class="text-big">R$ 199,90</h4>
+            <a
+              href="#"
+              class="button text-small"
+              >obter plano</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img
+        src="/src/assets/img/dog-footer.webp"
+        alt="dog footer"
+        width="576"
+        height="473"
+        loading="lazy"
+      />
+      <div class="footer-contact">
+        <h3 class="text-medium">Contate-nos</h3>
+        <div class="footer-social">
+          <a
+            href="#"
+            data-animate="pulsate"
+          >
+            <img
+              src="/src/assets/img/instagram.svg"
+              alt="instagram"
+              width="140"
+              height="140"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="#"
+            data-animate="pulsate"
+          >
+            <img
+              src="/src/assets/img/facebook.svg"
+              alt="facebook"
+              width="140"
+              height="140"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="/src/js/index.js"
+    ></script>
+  </body>
+</html>

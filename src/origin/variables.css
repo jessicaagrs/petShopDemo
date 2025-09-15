@@ -1,0 +1,17 @@
+:root {
+  --background: linear-gradient(180deg, #f4f9f7 0%, #dbece5 40%, #b7d8cb 100%);
+  --wattle-500: #cab628;
+  --olivine-50: #f4f7ee;
+  --olivine-600: #5f763a;
+  --olivine-800: #3d4a2a;
+  --plantation-200: #b7d8cb;
+  --plantation-300: #8bbdac;
+  --plantation-400: #639e8b;
+  --plantation-950: #12211e;
+  --killarney-800:#254032;
+  --killarney-950: #111d17;
+  --wattle-50: #fbfbeb;
+  --wattle-900: #634820;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
